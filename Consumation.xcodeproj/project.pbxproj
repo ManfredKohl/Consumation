@@ -13,9 +13,12 @@
 		639FC1962BCE870F00838B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639FC1942BCE870F00838B9F /* Main.storyboard */; };
 		639FC1982BCE871600838B9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639FC1972BCE871600838B9F /* Assets.xcassets */; };
 		639FC19B2BCE871600838B9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639FC1992BCE871600838B9F /* LaunchScreen.storyboard */; };
+		639FC1A52BCE94B800838B9F /* PowerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC1A42BCE94B800838B9F /* PowerManager.swift */; };
+		639FC1B02BCE984D00838B9F /* PowerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC1AF2BCE984D00838B9F /* PowerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		639242A82BE7CBE800DAEBFF /* Consumation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Consumation.entitlements; sourceTree = "<group>"; };
 		639FC18B2BCE870F00838B9F /* Consumation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Consumation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639FC18E2BCE870F00838B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		639FC1902BCE870F00838B9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		639FC1972BCE871600838B9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639FC19A2BCE871600838B9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		639FC19C2BCE871600838B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639FC1A42BCE94B800838B9F /* PowerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerManager.swift; sourceTree = "<group>"; };
+		639FC1AF2BCE984D00838B9F /* PowerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,8 @@
 		639FC18D2BCE870F00838B9F /* Consumation */ = {
 			isa = PBXGroup;
 			children = (
+				639242A82BE7CBE800DAEBFF /* Consumation.entitlements */,
+				639FC1A32BCE949C00838B9F /* Model */,
 				639FC18E2BCE870F00838B9F /* AppDelegate.swift */,
 				639FC1902BCE870F00838B9F /* SceneDelegate.swift */,
 				639FC1922BCE870F00838B9F /* ViewController.swift */,
@@ -65,6 +72,15 @@
 				639FC19C2BCE871600838B9F /* Info.plist */,
 			);
 			path = Consumation;
+			sourceTree = "<group>";
+		};
+		639FC1A32BCE949C00838B9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				639FC1A42BCE94B800838B9F /* PowerManager.swift */,
+				639FC1AF2BCE984D00838B9F /* PowerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +156,8 @@
 				639FC1932BCE870F00838B9F /* ViewController.swift in Sources */,
 				639FC18F2BCE870F00838B9F /* AppDelegate.swift in Sources */,
 				639FC1912BCE870F00838B9F /* SceneDelegate.swift in Sources */,
+				639FC1A52BCE94B800838B9F /* PowerManager.swift in Sources */,
+				639FC1B02BCE984D00838B9F /* PowerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,17 +304,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Consumation/Consumation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4VHBM8FV2;
 				INFOPLIST_FILE = Consumation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.montecalvo.Consumation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,17 +326,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Consumation/Consumation.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R4VHBM8FV2;
 				INFOPLIST_FILE = Consumation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.montecalvo.Consumation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
