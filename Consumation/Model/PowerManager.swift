@@ -79,7 +79,7 @@ struct PowerManager {
                 var powerString = String(from[ range])
         
                 powerString = String(powerString.dropFirst()) //get rid if leading ":"
-        //print(powerString)
+        // print(powerString)
         return(powerString);
         
     }
