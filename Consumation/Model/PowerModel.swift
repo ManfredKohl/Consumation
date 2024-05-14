@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class PowerModel {
+class PowerModel  {
     var solar:String = ""
     var enel:String = ""
     var totalConsumption:String = ""
