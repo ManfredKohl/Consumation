@@ -66,7 +66,7 @@ struct PowerManager {
          
     }
     func extractPower(from:String)->String
-    {
+    { //very raw  
         var idx1:String.Index
         var idx2:String.Index
                 let needle: Character = ":"
