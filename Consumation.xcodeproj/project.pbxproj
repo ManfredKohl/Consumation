@@ -16,6 +16,7 @@
 		639FC1A52BCE94B800838B9F /* PowerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC1A42BCE94B800838B9F /* PowerManager.swift */; };
 		639FC1B02BCE984D00838B9F /* PowerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC1AF2BCE984D00838B9F /* PowerModel.swift */; };
 		63A5096B2BF8AD5600E967D6 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63A5096A2BF8AD5600E967D6 /* ReadMe.rtf */; };
+		63B28DFF2E6B644C00C7F683 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 63B28DFE2E6B644C00C7F683 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		639FC1A42BCE94B800838B9F /* PowerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerManager.swift; sourceTree = "<group>"; };
 		639FC1AF2BCE984D00838B9F /* PowerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerModel.swift; sourceTree = "<group>"; };
 		63A5096A2BF8AD5600E967D6 /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		63B28DFE2E6B644C00C7F683 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		639FC18D2BCE870F00838B9F /* Consumation */ = {
 			isa = PBXGroup;
 			children = (
+				63B28DFE2E6B644C00C7F683 /* README.md */,
 				639242A82BE7CBE800DAEBFF /* Consumation.entitlements */,
 				63A5096A2BF8AD5600E967D6 /* ReadMe.rtf */,
 				639FC1A32BCE949C00838B9F /* Model */,
@@ -146,6 +149,7 @@
 			files = (
 				639FC19B2BCE871600838B9F /* LaunchScreen.storyboard in Resources */,
 				639FC1982BCE871600838B9F /* Assets.xcassets in Resources */,
+				63B28DFF2E6B644C00C7F683 /* README.md in Resources */,
 				63A5096B2BF8AD5600E967D6 /* ReadMe.rtf in Resources */,
 				639FC1962BCE870F00838B9F /* Main.storyboard in Resources */,
 			);
